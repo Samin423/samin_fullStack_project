@@ -1,0 +1,16 @@
+{
+  "name": "samin_fullstack_project",
+  "version": "1.0.0",
+  "description": "mixture of youtube and twitter",
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Md Samin Yasar Saadat",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

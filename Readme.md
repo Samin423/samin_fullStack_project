@@ -1,0 +1,1 @@
+This project is a full stack project which is a mixture of Youtube and twitter. Mostly focused on backend.
