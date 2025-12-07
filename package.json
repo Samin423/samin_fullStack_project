@@ -1,0 +1,23 @@
+{
+  "name": "samin_fullstack_project",
+  "version": "1.0.0",
+  "description": "This is a full stack project but mostly focused on backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samin423/samin_fullStack_project.git"
+  },
+  "keywords": [
+    "backend",
+    "javascript"
+  ],
+  "author": "Samin Yasar Saadat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samin423/samin_fullStack_project/issues"
+  },
+  "homepage": "https://github.com/Samin423/samin_fullStack_project#readme"
+}
