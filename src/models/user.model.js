@@ -55,10 +55,9 @@ const userSchema = new Schema(
 );
 
 
-userSchema.pre("save", async function (next) {      // pre-save hook to hash password
-    if (!this.isModified("password")) return next(); // if password is not modified, skip hashing
-    this.password = bcrypt.hash(this.password, 10);  // hash the password with salt rounds = 10
-    next();
+userSchema.pre("save", async function () {      // pre-save hook to hash password
+    if (!this.isModified("password")) return; // if password is not modified, skip hashing
+    this.password = await bcrypt.hash(this.password, 10);  // hash the password with salt rounds = 10
 });
 
 userSchema.methods.isPasswordCorrect = async function (password){
