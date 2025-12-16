@@ -1,0 +1,1 @@
+This is my full stack project but mostly focus on backend. Here I have done worked with Node, Mongo DB, Express, Multer and for files upload I use cloudinary and for API handling I have used Postman. 
