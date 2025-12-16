@@ -8,11 +8,12 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 // User Registration Controller
 const registerUser = asyncHandler(async (req, res) => {
     // get user details from frontend
+    console.log("req.body:", req.body);
     const {fullName, email, username, password} = req.body;
     console.log("email:", email);
     // validate user details
     if (
-        [fullName, email, username, password].some((field) => field?.trim === "")
+        [fullName, email, username, password].some((field) => field?.trim() === "")
     ) {
         throw new ApiError(400, "All fields are required"); 
     }
@@ -27,8 +28,10 @@ const registerUser = asyncHandler(async (req, res) => {
     }
 
     // handle file uploads
+    console.log("req.files:", req.files);
     const avatarLocalPath = req.files?.avatar[0]?.path
     const coverImageLocalPath = req.files?.coverImage[0]?.path
+    console.log("avatarLocalPath:", avatarLocalPath);
 
     // validate avatar presence
     if (!avatarLocalPath){
